@@ -1,3 +1,9 @@
+
+a:-webkit-any-link{
+text-decoration:none !important;
+}
+
+
 * {
   box-sizing: border-box;
 }
