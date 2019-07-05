@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="logoimg" src="{% static "main/images/beenew.png" %}" alt="">
+            <input type="checkbox" id="nav" class="hidden">
+            <label for="nav" class="nav-btn">
+                <i></i>
+                <i></i>
+                <i></i>
+            </label>
+            <div class="logo">
+                <a href="#"><span>Code</span>Kats</a>
+            </div>
+            <div class="nav-wrapper">
+                <ul>
+                    <li><a href="#" class="box">Categories</a></li>
+                    <li><a href="#" class="box">Testimonials</a></li>
+                    <li><a href="#" class="box">Blog</a></li>
+                    <li><a href="#" class="box" id="more">More</a></li>
+                    <li>
+                        <div class="button-1 box" id="boxnew">
+                            <div class="eff-1"></div>
+                            <a href="#">Sign In</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="button-2 box" id="boxnew">
+                            <div class="eff-2"></div>
+                            <a href="#">Sign Up</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+
+    {% block content %}
+    {% endblock %}
+
+
+</body>
+
+</html>
